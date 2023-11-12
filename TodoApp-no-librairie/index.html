@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Todo&#x1F5A4</h1>
+    <main>
+      <form action="">
+        <input type="input" name="todo" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+        <ul id="todo-container">
+        </ul>
+      </form>
+      <div id="filter">
+        <p id="items-left">0 items left</p>
+        <div>
+          <button id="all">All</button>
+          <button id="active">Active</button>
+          <button id="complete">Complete</button>
+        </div>
+      </div>
+    </main>
+    <small>
+      Left click to toggle todo completion <br>
+      Right click to delete todo <br>
+      Enter to add todo
+    </small>
+  </body>
+</html>
