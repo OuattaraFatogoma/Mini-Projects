@@ -1,0 +1,179 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Sue Ellen Francisco", sans-serif;
+  color: #555;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 10rem 0 #555;
+  border-radius: 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 1px;
+}
+
+header input {
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0.5rem 0px #80dfc9;
+  outline: none;
+  font-family: "Sue Ellen Francisco", sans-serif;
+  font-size: 1.3rem;
+}
+
+#favorite-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  background-color: #c8fff1;
+}
+
+#favorite-container::-webkit-scrollbar {
+  display: none;
+}
+
+.favorite {
+  margin: 0 5px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.favorite img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4e8779;
+  cursor: pointer;
+}
+
+.favorite h4 {
+  width: 80px;
+  display: inline-block;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.favorite .fa-xmark {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  color: #5b1d1d;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.favorite:hover .fa-xmark {
+  opacity: 1;
+}
+
+#recipe-container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  
+}
+
+.recipe {
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 280px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.recipe h3 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 0 5px;
+  background-color: antiquewhite;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.recipe img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.recipe span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.recipe p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipe .fa-heart{
+  cursor: pointer;
+}
+
+.recipe .fa-solid{
+  color: #bf2626;
+}
+
+
+#show-recipe{
+  width: 90%;
+  max-width: 900px;
+  border: none;
+  background-color: antiquewhite;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+#show-recipe::-webkit-scrollbar{
+  display: none;
+}
+#show-recipe img{
+  display: block;
+  width: 60vh;
+  margin: 0 auto;
+}
+
+#show-recipe a{
+  text-align: center;
+  outline: none;
+}
+
+#show-recipe .fa-xmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #555;
+  cursor: pointer;
+  font-size: 2rem;
+}
