@@ -51,7 +51,26 @@ header .navbar li:hover a::after,
 }
 
 #hero .container {
-  padding: 12rem;
+  padding-top: 20%;
+  padding-left: 20%;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  #hero .container {
+    padding-top: 35%;
+    padding-left: 5%;
+  }
+  #newsletter form{
+    justify-content: center !important;
+  }
+  #newsletter input{
+    width: 68% !important;
+  }
+  
+  #newsletter button{
+    width: 32% !important;
+  }
+  
 }
 
 #hero .visual {
@@ -117,7 +136,6 @@ header .navbar li:hover a::after,
 /********************* first banner *******************/
 #banner{
   background: url(images/banner/b2.jpg);
-  height: 40vh;
 }
 button.normal {
   display: inline !important;
@@ -158,12 +176,12 @@ button.normal:hover {
 }
 
 .first-row .first-banner{
-  background: url(images/banner/b17.jpg) no-repeat;
+  background: url(images/banner/b17.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .first-row .second-banner{
-  background: url(images/banner/b10.jpg) no-repeat ;
+  background: url(images/banner/b10.jpg) center center no-repeat ;
   background-size: cover;
 }
 
@@ -172,17 +190,17 @@ button.normal:hover {
 }
 
 .second-row .first-banner{
-  background: url(images/banner/b7.jpg) no-repeat ;
+  background: url(images/banner/b7.jpg) center center no-repeat ;
   background-size: cover;
 } 
 
 .second-row .second-banner{
-  background: url(images/banner/b4.jpg) no-repeat ;
+  background: url(images/banner/b4.jpg) center center no-repeat ;
   background-size: cover;
 }
 
 .second-row .third-banner{
-  background: url(images/banner/b18.jpg) no-repeat ;
+  background: url(images/banner/b18.jpg) center center no-repeat ;
   background-size: cover;
 }
 
@@ -191,7 +209,6 @@ button.normal:hover {
 #newsletter{
   background-color: rgb(9, 9, 66);
   color: white;
-  height: 25vh;
 }
 
 #newsletter .row{
