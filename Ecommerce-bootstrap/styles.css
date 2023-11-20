@@ -30,7 +30,9 @@ header .navbar a:hover {
   color: var(--primary-color);
   position: relative;
 }
-
+.active{
+  color: var(--primary-color) !important;
+}
 header .navbar li:hover a::after,
 .active::after {
   display: block;
@@ -54,23 +56,6 @@ header .navbar li:hover a::after,
   padding-top: 20%;
   padding-left: 20%;
   margin: 0;
-}
-@media only screen and (max-width: 768px) {
-  #hero .container {
-    padding-top: 35%;
-    padding-left: 5%;
-  }
-  #newsletter form{
-    justify-content: center !important;
-  }
-  #newsletter input{
-    width: 68% !important;
-  }
-  
-  #newsletter button{
-    width: 32% !important;
-  }
-  
 }
 
 #hero .visual {
@@ -134,7 +119,7 @@ header .navbar li:hover a::after,
 }
 
 /********************* first banner *******************/
-#banner{
+#banner {
   background: url(images/banner/b2.jpg);
 }
 button.normal {
@@ -152,14 +137,13 @@ button.normal:hover {
   color: white;
 }
 
-#banner button{
+#banner button {
   width: auto;
 }
 
-
 /********************* second banner *******************/
 
-#banner2 button{
+#banner2 button {
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -175,13 +159,13 @@ button.normal:hover {
   height: 55vh;
 }
 
-.first-row .first-banner{
+.first-row .first-banner {
   background: url(images/banner/b17.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.first-row .second-banner{
-  background: url(images/banner/b10.jpg) center center no-repeat ;
+.first-row .second-banner {
+  background: url(images/banner/b10.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -189,58 +173,119 @@ button.normal:hover {
   height: 34vh;
 }
 
-.second-row .first-banner{
-  background: url(images/banner/b7.jpg) center center no-repeat ;
-  background-size: cover;
-} 
-
-.second-row .second-banner{
-  background: url(images/banner/b4.jpg) center center no-repeat ;
+.second-row .first-banner {
+  background: url(images/banner/b7.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.second-row .third-banner{
-  background: url(images/banner/b18.jpg) center center no-repeat ;
+.second-row .second-banner {
+  background: url(images/banner/b4.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.second-row .third-banner {
+  background: url(images/banner/b18.jpg) center center no-repeat;
   background-size: cover;
 }
 
 /********************* Newsletters *******************/
 
-#newsletter{
+#newsletter {
   background-color: rgb(9, 9, 66);
   color: white;
 }
 
-#newsletter .row{
+#newsletter .row {
   height: 100%;
-  background: url(images/banner/b14.png) center ;
+  background: url(images/banner/b14.png) center;
 }
 
-#newsletter input{
-  border-radius: 5px  0 0 5px ;
+#newsletter input {
+  border-radius: 5px 0 0 5px;
 }
 
-#newsletter button{
+#newsletter button {
   width: 25%;
   background-color: var(--primary-color);
   color: white;
-  border-radius: 0  5px  5px 0;
+  border-radius: 0 5px 5px 0;
 }
 
-#newsletter button:hover{
-  background-color:  #0d7c5e;
+#newsletter button:hover {
+  background-color: #0d7c5e;
   color: white;
 }
 
 /********************* footer *******************/
 
-footer ul{
+footer ul {
   list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 
-footer ul li, footer p{
-  opacity: .7;
+footer ul li,
+footer p {
+  opacity: 0.7;
 }
+
+
+/****************** responsive views ****************/
+
+@media only screen and (max-width: 768px) {
+  #hero .container {
+    padding-top: 35%;
+    padding-left: 5%;
+  }
+  #newsletter form {
+    justify-content: center !important;
+  }
+  #newsletter input {
+    width: 68% !important;
+  }
+
+  #newsletter button {
+    width: 32% !important;
+  }
+}
+
+
+
+
+/*  shop */
+
+/***********************  hero ************************/
+
+#shop-hero {
+  background: url(images/banner/b1.jpg);
+}
+
+/***********************  pagination ************************/
+
+#pagination a{
+  text-decoration: none;
+}
+
+button.frequent{
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0;
+}
+
+button.frequent:hover{
+  background-color: rgb(48, 170, 146);
+}
+
+
+
+/*  single product page */
+
+/***********************  product details ************************/
+.second-img{
+  cursor: pointer;
+}
+
+
+
+/*  blog */
