@@ -248,6 +248,18 @@ footer p {
   #newsletter button {
     width: 32% !important;
   }
+
+
+
+  #blog-post .row{
+    height: fit-content !important;
+  }
+  #blog-post h3{
+    display: none;
+  }
+  #blog-post img{
+    height: 50vh !important;
+  }
 }
 
 
@@ -289,3 +301,123 @@ button.frequent:hover{
 
 
 /*  blog */
+/***********************  hero ************************/
+
+#blog-hero {
+  background: url(images/banner/b19.jpg) center center;
+}
+
+/***********************  post ************************/
+
+#blog-post .row{
+  height: 48vh;
+  position: relative;
+}
+
+#blog-post img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#blog-post a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#blog-post a::after{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 30px;
+  background-color: black;
+  position: relative;
+  top: -14px;
+  left: 150px;
+}
+
+#blog-post a:hover{
+  font-weight: bold;
+  color: var(--primary-color);
+}
+#blog-post p:hover a::after{
+  background-color: var(--primary-color);
+}
+
+#blog-post h3{
+  position: absolute;
+  top: -13%;
+  left: 10%;
+  z-index: -1;
+}
+
+/*  about */
+
+/***********************  hero ************************/
+
+#about-hero {
+  background: url(images/about/banner.png) center center no-repeat;
+}
+
+/*  contact */
+
+/***********************  hero ************************/
+
+#contact-hero {
+  background: url(images/about/banner.png) 20% no-repeat;
+}
+
+#contact-us ul, #contact-form ul{
+  margin: 0;
+  padding: 0;
+}
+#contact-us li, #contact-form li{
+  list-style: none;
+  padding-top: 10px;
+}
+
+#contact-form li{
+  padding: 0;
+}
+
+
+#contact-form textarea{
+  resize: none;
+}
+
+/*  cart */
+
+/*****************prodact table ****************/
+#cart{
+  overflow-x: auto;
+}
+
+#cart table {
+  scroll-behavior: smooth;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  min-width: 780px !important;
+} 
+
+#cart th{
+  height: 50px;
+} 
+
+#cart td{
+  height: 80px;
+}
+
+#cart input{
+  width: 2rem;
+}
+
+#buy table, #buy th, #buy td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#buy table td, #buy table th{
+  width: 150px;
+  text-align: center;
+}
