@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+#intro {
+  @include gradient;
+  color: $white;
+  padding-top: 5rem;
+  font-family: "Poppins", sans-serif;
+
+  .intro {
+    p {
+      margin: 1.5rem 0;
+      line-height: 2.5rem;
+      font-size: 1.2rem;
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    a {
+      i {
+        font-size: 6rem;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid $white;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+
+  &--border-1 {
+    animation-delay: 1s;
+  }
+
+  &--border-2 {
+    animation-delay: 1.5s;
+  }
+}

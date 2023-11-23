@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.navbar{
+    @include gradient;
+}
+
+.navbar-nav{
+    li>a{
+        padding-right: 1.5rem !important;
+        color: $white;
+        font-weight: 600;
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    .offcanvas-body, .offcanvas-header{
+        @include gradient;
+    }
+}

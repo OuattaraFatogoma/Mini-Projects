@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use "mixins" as *;
+
+.btn-rounded{
+    border: 1px solid white !important;
+    background-color: $white;
+
+    i{
+        background-color: grey;
+        border-radius: 50%;
+    }
+    &:hover{
+        @include gradient;
+        color: $white;
+        i{
+            color: black;
+            background-color: $white;
+        }
+    }
+}
