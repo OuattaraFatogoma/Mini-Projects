@@ -1,0 +1,55 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+main {
+  width: 300px;
+  height: 325px;
+  margin: auto;
+  border: none;
+  background-color: dimgray;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px 5px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 3px;
+}
+
+#screen {
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  background-color: aliceblue;
+  margin: 5px auto;
+  border-radius: 10px;
+  text-align: end;
+  padding: 5px;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+#body {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+button {
+  width: 18%;
+  height: 35px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
+  cursor: pointer;
+}
+button.equal {
+  width: 36%;
+}
