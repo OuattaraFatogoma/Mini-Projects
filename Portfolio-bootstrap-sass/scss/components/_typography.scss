@@ -1,0 +1,43 @@
+@use "../custom" as *;
+@use "mixins" as *;
+
+// HEADING LINES
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  background-color: $primary;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.1rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  background-color: $primary;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.display-3--title {
+  display: inline-block;
+  @include gradient;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

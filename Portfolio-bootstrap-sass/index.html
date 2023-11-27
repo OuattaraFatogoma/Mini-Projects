@@ -1,98 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <!--Glightbox links -->
-    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
 
     <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Bootstrap JavaScript Bundle CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-</head>
-<body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
     <!-- NAV BAR SECTION START -->
-    <nav class="navbar navbar-expand-lg  sticky-top shadow">
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top shadow">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo" />
           </a>
-          <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Patrix</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+                Patrix
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
+                  <a class="nav-link" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
-              <button type="button" class="rounded-pill ps-3  btn-rounded">+1 7567434224 <span><i class="fas fa-phone p-2"></i></span></button>
+              <button type="button" class="rounded-pill ps-3 btn-rounded">
+                +1 7567434224 <span><i class="fas fa-phone p-2"></i></span>
+              </button>
             </div>
           </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- INTRO SECTION START -->
-    <section id="intro">
+    <main>
+      <!-- INTRO SECTION START -->
+      <section id="intro">
         <div class="row container px-5 m-auto">
-            <div class="col-lg-6 intro">
-                <h1 class="display-3 fw-bold">Hey!, I'm Fatogoma</h1>
-                <p >This is a portfolio website created with bootstrap v5 and SASS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia fuga officia assumenda, nulla aliquid?</p>
-                <button type="button" class="rounded-pill p-3  btn-rounded">Get in Touch<span><i class="fas fa-arrow-right ms-2 p-2"></i></span></button>
+          <div class="col-lg-6 intro">
+            <h1 class="display-3 fw-bold">Hey!, I'm Fatogoma</h1>
+            <p>
+              This is a portfolio website created with bootstrap v5 and SASS.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              quia fuga officia assumenda, nulla aliquid?
+            </p>
+            <button type="button" class="rounded-pill p-3 btn-rounded">
+              Get in Touch<span
+                ><i class="fas fa-arrow-right ms-2 p-2"></i
+              ></span>
+            </button>
+          </div>
+          <div class="col-lg-6 intro text-end">
+            <div class="video-box position-relative">
+              <img
+                src="images/arts/intro-section-illustration.png"
+                alt=""
+                class="img-fluid"
+              />
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <i class="fas fa-play-circle"></i>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
             </div>
-            <div class="col-lg-6 intro text-end">
-                <div class="video-box position-relative">
-                    <img src="images/arts/intro-section-illustration.png" alt="" class="img-fluid">
-                    <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-                        <i class="fas fa-play-circle"></i>
-                        <span class="border-animation border-animation--border-1"></span>
-                        <span class="border-animation border-animation--border-2"></span>
-                    </a>
-                </div>
-                
-            </div>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L16,90.7C32,117,64,171,96,192C128,213,160,203,192,181.3C224,160,256,128,288,128C320,128,352,160,384,149.3C416,139,448,85,480,74.7C512,64,544,96,576,106.7C608,117,640,107,672,90.7C704,75,736,53,768,85.3C800,117,832,203,864,202.7C896,203,928,117,960,80C992,43,1024,53,1056,90.7C1088,128,1120,192,1152,213.3C1184,235,1216,213,1248,181.3C1280,149,1312,107,1344,106.7C1376,107,1408,149,1424,170.7L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
-    </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,64L16,90.7C32,117,64,171,96,192C128,213,160,203,192,181.3C224,160,256,128,288,128C320,128,352,160,384,149.3C416,139,448,85,480,74.7C512,64,544,96,576,106.7C608,117,640,107,672,90.7C704,75,736,53,768,85.3C800,117,832,203,864,202.7C896,203,928,117,960,80C992,43,1024,53,1056,90.7C1088,128,1120,192,1152,213.3C1184,235,1216,213,1248,181.3C1280,149,1312,107,1344,106.7C1376,107,1408,149,1424,170.7L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
 
+      <!-- COMPANIE SECTION START -->
+      <section id="companies" class="companies">
+        <div class="container">
+          <h5 class="text-center fw-bold">Trusted by companies like</h5>
+          <div class="heading-line mx-5"></div>
+          <div class="row">
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-1.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-2.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-3.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-4.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-5.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-4 col-lg-2 g-5 companies-logo shadow-sm">
+              <img
+                src="images/campanies/campany-6.png"
+                alt="companie logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE SECTION -->
+      <section id="service" class="services">
+        <div class="container">
+          <h3 class="display-3 text-center fw-bold">OUR SERVICES</h3>
+          <div class="heading-line mb-3"></div>
+
+          <div class="row mb-1">
+            <div class="col-md-6 col-xs-12 border-end">
+              <h5 class="display-6 text-capitalize fw-bold text-center">
+                OUR services range from intial design to deplayment anywhere
+                anytime
+              </h5>
+            </div>
+            <div class="col-md-6 col-xs-12 ps-3">
+              <p class="fw-light">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                nostrum sint alias quasi, modi in assumenda enim nemo
+                repellendus reiciendis totam odio officiis esse, recusandae
+                doloremque ipsum velit corrupti quos?
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-md-6 col-xs-12 services-content">
+              <i class="d-block fas fa-paper-plane icon"></i>
+              <h3 class="display-3--title">Marketing</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum magnam repellat exercitationem nihil vitae! Voluptatem,
+                earum? Adipisci accusantium amet qui expedita commodi atque esse
+                debitis magnam, hic quae quia exercitationem, dolores,
+                consectetur nisi eaque necessitatibus maxime! Magnam ea beatae
+                dolor enim voluptate? Soluta mollitia exercitationem hic impedit
+                natus, esse magnam!
+              </p>
+              <button
+                type="button"
+                class="rounded-pill p-3 btn-rounded btn-rounded-primary"
+              >
+                Learn more
+                <span><i class="fas fa-arrow-right ms-2 p-2"></i></span>
+              </button>
+            </div>
+            <div class="col-md-6 col-xs-12 services-pic text-end">
+              <img
+                src="images/services/service-1.png"
+                alt="marketing illustration"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 col-xs-12 services-pic text-start">
+              <img
+                src="images/services/service-2.png"
+                alt="Web development illustration"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 col-xs-12 services-content">
+              <i class="d-block fas fa-code icon"></i>
+              <h3 class="display-3--title">Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum magnam repellat exercitationem nihil vitae! Voluptatem,
+                earum? Adipisci accusantium amet qui expedita commodi atque esse
+                debitis magnam, hic quae quia exercitationem, dolores,
+                consectetur nisi eaque necessitatibus maxime! Magnam ea beatae
+                dolor enim voluptate? Soluta mollitia exercitationem hic impedit
+                natus, esse magnam!
+              </p>
+              <button
+                type="button"
+                class="rounded-pill p-3 btn-rounded btn-rounded-primary"
+              >
+                Learn more
+                <span><i class="fas fa-arrow-right ms-2 p-2"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6 col-xs-12 services-content">
+              <i class="d-block fas fa-cloud icon"></i>
+              <h3 class="display-3--title">Cloud Hosting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum magnam repellat exercitationem nihil vitae! Voluptatem,
+                earum? Adipisci accusantium amet qui expedita commodi atque esse
+                debitis magnam, hic quae quia exercitationem, dolores,
+                consectetur nisi eaque necessitatibus maxime! Magnam ea beatae
+                dolor enim voluptate? Soluta mollitia exercitationem hic impedit
+                natus, esse magnam!
+              </p>
+              <button
+                type="button"
+                class="rounded-pill p-3 btn-rounded btn-rounded-primary"
+              >
+                Learn more
+                <span><i class="fas fa-arrow-right ms-2 p-2"></i></span>
+              </button>
+            </div>
+            <div class="col-md-6 col-xs-12 services-pic text-end">
+              <img
+                src="images/services/service-3.png"
+                alt="cloud hosting illustration"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- glidhtbox JavaScript -->
     <script src="assets/vendors/js/glightbox.min.js"></script>
     <script type="text/javaScript">
-        const lightbox = GLightbox({
-            'href': 'hhttps://www.youtube.com/watch?v=bbVZo4Yw7pI&list=RDbbVZo4Yw7pI&start_radio=1',
-            'type': 'video',
-            'source': 'youtube',
-            'width': 900,
-        });
+      const lightbox = GLightbox({
+          'href': 'hhttps://www.youtube.com/watch?v=bbVZo4Yw7pI&list=RDbbVZo4Yw7pI&start_radio=1',
+          'type': 'video',
+          'source': 'youtube',
+          'width': 900,
+      });
     </script>
-</body>
+  </body>
 </html>
