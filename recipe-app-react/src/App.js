@@ -8,7 +8,9 @@ function App() {
       <Header/>
       <Favorites/>
       <Meals/>
-      <Modal/>
+      <dialog id="show-recipe">
+        <Modal/>
+      </dialog>
     </main>
   );
 }
