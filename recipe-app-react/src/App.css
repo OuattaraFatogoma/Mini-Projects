@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1px;
 }
 
@@ -45,7 +45,7 @@ header input {
   padding: 0;
 }
 #favorite-container {
-  height: 150px;
+  height: 100px;
   display: flex;
   align-items: center;
   overflow-x: scroll;
@@ -66,8 +66,8 @@ header input {
   align-items: center;
 }
 .favorite img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #4e8779;
