@@ -6,7 +6,7 @@ function Meals(){
 
   if(loading) return(
                   <section id="recipe-container">
-                    <img src="../../public/loading.gif" alt="loading image" width="200px" style={{margin:'auto'}}/>
+                    <img src="../../loading.gif" alt="loading image" width="200px" style={{margin:'auto'}}/>
                   </section>)
 
   if(meals.length<1) return(<section id="recipe-container"> <h2>No meal found</h2> </section>)

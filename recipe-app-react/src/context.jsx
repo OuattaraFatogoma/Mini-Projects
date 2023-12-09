@@ -68,7 +68,7 @@ const AppProvider = ({children})=>{
     function showMealRecipe(id){
        SetMealToShow(meals.find(meal => meal.id == id));
        const modal = document.getElementById("show-recipe");
-       modal.show();
+       modal.showModal();
     }
 
 
