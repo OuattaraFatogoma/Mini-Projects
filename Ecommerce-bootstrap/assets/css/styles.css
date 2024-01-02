@@ -48,7 +48,7 @@ header .navbar li:hover a::after,
 /*************************** Hero ******************/
 
 #hero {
-  background: url(images/hero4.png) 70% 15%;
+  background: url(../images/hero4.png) 70% 15%;
   height: 120vh;
 }
 
@@ -64,7 +64,7 @@ header .navbar li:hover a::after,
 
 #hero button {
   border: none;
-  background: url(images/button.png);
+  background: url(../images/button.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ header .navbar li:hover a::after,
 
 /********************* first banner *******************/
 #banner {
-  background: url(images/banner/b2.jpg);
+  background: url(../images/banner/b2.jpg);
 }
 button.normal {
   display: inline !important;
@@ -160,12 +160,12 @@ button.normal:hover {
 }
 
 .first-row .first-banner {
-  background: url(images/banner/b17.jpg) center center no-repeat;
+  background: url(../images/banner/b17.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .first-row .second-banner {
-  background: url(images/banner/b10.jpg) center center no-repeat;
+  background: url(../images/banner/b10.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -174,17 +174,17 @@ button.normal:hover {
 }
 
 .second-row .first-banner {
-  background: url(images/banner/b7.jpg) center center no-repeat;
+  background: url(../images/banner/b7.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .second-row .second-banner {
-  background: url(images/banner/b4.jpg) center center no-repeat;
+  background: url(../images/banner/b4.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .second-row .third-banner {
-  background: url(images/banner/b18.jpg) center center no-repeat;
+  background: url(../images/banner/b18.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -197,7 +197,7 @@ button.normal:hover {
 
 #newsletter .row {
   height: 100%;
-  background: url(images/banner/b14.png) center;
+  background: url(../images/banner/b14.png) center;
 }
 
 #newsletter input {
@@ -270,7 +270,7 @@ footer p {
 /***********************  hero ************************/
 
 #shop-hero {
-  background: url(images/banner/b1.jpg);
+  background: url(../images/banner/b1.jpg);
 }
 
 /***********************  pagination ************************/
@@ -304,7 +304,7 @@ button.frequent:hover{
 /***********************  hero ************************/
 
 #blog-hero {
-  background: url(images/banner/b19.jpg) center center;
+  background: url(../images/banner/b19.jpg) center center;
 }
 
 /***********************  post ************************/
@@ -356,7 +356,7 @@ button.frequent:hover{
 /***********************  hero ************************/
 
 #about-hero {
-  background: url(images/about/banner.png) center center no-repeat;
+  background: url(../images/about/banner.png) center center no-repeat;
 }
 
 /*  contact */
@@ -364,7 +364,7 @@ button.frequent:hover{
 /***********************  hero ************************/
 
 #contact-hero {
-  background: url(images/about/banner.png) 20% no-repeat;
+  background: url(../images/about/banner.png) 20% no-repeat;
 }
 
 #contact-us ul, #contact-form ul{
